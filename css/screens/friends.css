@@ -1,7 +1,7 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #fafafa;
+  background-color: #83b1c9;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -10,6 +10,17 @@
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
+}
+.user-channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebe3;
+  border-radius: 30px;
+  height: 70px;
+  width: 70px;
+  border: none;
+  font-size: 25px;
 }
 
 .friends-screen {
@@ -27,25 +38,21 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
-@keyframes hideSplashScreen {
-  forom {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-#splash-screen {
-  background-color: var(--yellow);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
+
+.user-identify__ni {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 85px;
-  animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 2s;
+  justify-content: space-between;
+  width: 100%;
+}
+.user-identify {
+  width: 120px;
+  height: 35px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }

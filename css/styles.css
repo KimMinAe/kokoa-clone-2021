@@ -20,10 +20,12 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
-
+@import "screens/user-identify.css";
 body {
+  background-color: #bfc8d7;
   color: #2f363e;
   font-family: "Open Sans", sans-serif;
+  height: 150vh;
 }
 
 .main-screen {

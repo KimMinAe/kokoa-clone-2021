@@ -1,0 +1,136 @@
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px -5px;
+  color: var(--color-white-gray);
+  font-size: 20px;
+}
+.line {
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.user-music__play,
+.icon-circle,
+.user-header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--color-white-gray);
+  margin: 0 5px;
+}
+.user-music__play {
+  margin-top: 40px;
+  width: 140px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
+  color: var(--color-white-gray);
+  font-size: 12px;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+.user-introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-introduce__picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 35px;
+  margin-top: 170px;
+  margin-bottom: 15px;
+}
+.user-introduce__ni {
+  font-size: 18px;
+  color: var(--color-white-gray);
+}
+.user-another {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white-gray);
+}
+.user-another__talk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px;
+}
+.user-another__icon {
+  margin-bottom: 10px;
+}
+@keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes starChange {
+  from {
+    transform: none;
+  }
+  to {
+    background-color: rgba(243, 156, 18, 1);
+    color: white;
+    transform: translateZ(5px);
+  }
+}
+
+.icon-circle:hover {
+  animation: starChange linear infinite forwards;
+}
+
+.user-music__play:hover {
+  animation: musicShadow 1s ease-in-out forwards;
+  box-shadow: 4px 4px 5px #6e7575;
+}
+
+@keyframes phoneShake {
+  0% {
+    trnasform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    color: rgba(243, 157, 18, 0.712);
+    transform: translate(-1px, -2px) rotate(1deg);
+  }
+  40% {
+    color: rgba(243, 157, 18, 0.836);
+    transform: translate(1px, 2px) rotate(-1deg);
+  }
+  60% {
+    color: rgba(243, 156, 18, 1);
+    transform: translate(-2px, -1px) rotate(0deg);
+  }
+  80% {
+    color: rgba(243, 157, 18, 0.836);
+    transform: translate(1px, 2px) rotate(1deg);
+  }
+  100% {
+    color: rgba(243, 157, 18, 0.61);
+    trnasform: translate(-2px, 1px) rotate(-1deg);
+  }
+}
+
+.fa-phone-alt:hover {
+  animation: phoneShake 1s linear infinite;
+}
+
+.talk__icon:hover {
+  color: rgba(243, 156, 18, 1);
+}
